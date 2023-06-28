@@ -938,4 +938,4 @@ with block:
     run_button3.click(fn=process3, outputs=[result_keyframe])
 
 block.queue(concurrency_count=1, max_size=20)
-block.launch(server_name='0.0.0.0')
+block.launch(share=True)
